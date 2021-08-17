@@ -19,7 +19,7 @@ admin.initializeApp({
  
 
 const { MongoClient } = require('mongodb');
-const uri = "mongodb+srv://burjAL:saurav12345@cluster0.5gwiv.mongodb.net/burjAlArab?retryWrites=true&w=majority";
+const uri = "mongodb+srv://burjAL:@cluster0.5gwiv.mongodb.net/burjAlArab?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
   const booking = client.db("burjAlArab").collection("booking");
